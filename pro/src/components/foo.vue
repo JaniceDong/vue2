@@ -19,4 +19,7 @@ export default {
   height:500px;
   color:green;
 }
+.router-link-active{
+  color: purple;
+}
 </style>

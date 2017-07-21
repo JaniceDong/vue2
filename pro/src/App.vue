@@ -2,6 +2,8 @@
   <div id="app">
     <router-link to="/foo">Go to Foo</router-link>
     <router-link to="/bar">Go to bar</router-link>
+    <router-link to="/foo/foo2">Go to Foo2</router-link>
+    <router-link to="/bar/bar2">Go to bar2</router-link>
     <router-view></router-view>
   </div>
 </template>
@@ -28,6 +30,7 @@ export default {
     display: inline-block;
     height: 20px;
     text-decoration: none;
+    padding:0 5px;
   }
   .router-link-active{
     color: red;
