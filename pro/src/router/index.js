@@ -1,44 +1,29 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Foo from '@/components/foo'
-import Bar from '@/components/bar'
+import First from '@/components/foo'
+import Second from '@/components/bar'
 
-import Foo2 from '@/components/foo2'
-import Bar2 from '@/components/bar2'
+import Third from '@/components/foo2'
+import Fourth from '@/components/bar2'
 
-import Fo from '@/components/fo'
-import Ba from '@/components/ba'
+import Guodu from '@/components/guodu'
+import ThirdFirst from '@/components/fo'
+import ThirdSecond from '@/components/ba'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      component: Foo,
-    },{
-      path:'/foo',
-      component:Foo
-    },{
-      path:'/bar',
-      component:Bar
-    },{
-      path:'/foo/:id',
-      component:Foo2,
+    {path: '/', component: First, name:"Home"},
+    {path:'/foo', component:First, name:"First"},
+    {path:'/bar', component:Second, name:"Second"},
+    {path:'/foo2', component:Guodu,
       children:[
-        {
-          path:'fo',
-          component:Fo
-        },
-        {
-          path:'ba',
-          component:Ba
-        }
-      ]
-    },{
-      path:'/bar/:id',
-      component:Bar2
-    }
+        {path:'/', component:Third, name:"Third"},
+        {path:'fo', component:ThirdFirst, name:"ThirdFirst"},
+        {path:'ba', component:ThirdSecond, name:"ThirdSecond"}
+      ]},
+    {path:'/bar2', component:Fourth, name:"Fourth"}
   ]
 })

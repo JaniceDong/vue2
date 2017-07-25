@@ -14,9 +14,5 @@ export default {
 }
 </script>
 <style type="text/css">
-.bar{
-  width:100%;
-  height: 500px;
-  color:blue;
-}
+
 </style>

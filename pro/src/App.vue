@@ -1,38 +1,29 @@
 <template>
   <div id="app">
-    <router-link to="/foo">Go to Foo</router-link>
-    <router-link to="/bar">Go to bar</router-link>
-    <router-link to="/foo/foo2">Go to Foo2</router-link>
-    <router-link to="/bar/bar2">Go to bar2</router-link>
+    <p> {{ $route.name }}</p>
+    <ol>
+      <li><router-link to="/foo">Go to 1</router-link></li>
+      <li><router-link to="/bar">Go to 2</router-link></li>
+      <li><router-link to="/foo2"> Go to 3</router-link></li>
+      <ol>
+        <li><router-link to="/foo2/fo">Go to 1/1 </router-link></li>
+        <li><router-link to="/foo2/ba">Go to 1/2</router-link></li>
+      </ol>
+      <li><router-link to="/bar2">Go to 4</router-link></li>
+    </ol>
     <router-view></router-view>
   </div>
 </template>
-
 <script>
+/*import child from './components/foo2.vue';*/
 export default {
   name: 'app',
+ /* components:{
+    child:child
+  }*/
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 30px;
-  width:100%;
-  height:100%;
-  overflow: hidden;
-  text-align: center;
-}
-  #app a{
-    display: inline-block;
-    height: 20px;
-    text-decoration: none;
-    padding:0 5px;
-  }
-  .router-link-active{
-    color: red;
-  }
+
 </style>

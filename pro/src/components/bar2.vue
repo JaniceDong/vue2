@@ -1,5 +1,5 @@
 <template>
-  <div class="bar2">动态路由{{ $route.params.id }}</div>
+  <div class="bar2">动态路由bar2</div>
 </template>
 <script type="text/ecmascript-6">
 

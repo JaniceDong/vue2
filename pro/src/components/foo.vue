@@ -14,11 +14,7 @@ export default {
 }
 </script>
 <style type="text/css">
-.foo{
-  width:100%;
-  height:500px;
-  color:green;
-}
+
 .router-link-active{
   color: purple;
 }
