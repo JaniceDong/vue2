@@ -14,6 +14,8 @@ import ThirdSecond from '@/components/ba'
 Vue.use(Router)
 
 export default new Router({
+  mode:'history',
+  base:__dirname,
   routes: [
     {path: '/', component: First, name:"Home"},
     {path:'/foo', component:First, name:"First"},
