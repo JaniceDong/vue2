@@ -1,11 +1,11 @@
 <template>
-  <div class="foo2">
-    Third
-   <p>组件foo2，也即Third的内容</p>
+  <div class="guodu">
+    <h2>组件</h2>
+    <router-view></router-view>
   </div>
 </template>
 <script type="text/ecmascript-6">
-export default{}
+
 </script>
 <style scoped>
 

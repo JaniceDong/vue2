@@ -1,5 +1,6 @@
 <template>
   <div class="foo">
+    First
     <p>{{ message }}</p>
   </div>
 

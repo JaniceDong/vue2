@@ -1,7 +1,6 @@
 <template>
   <div class="foo2">
-    Third
-   <p>组件foo2，也即Third的内容</p>
+    组件foo2，也即Third的内容
   </div>
 </template>
 <script type="text/ecmascript-6">

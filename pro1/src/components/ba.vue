@@ -1,8 +1,5 @@
 <template>
-  <div class="foo2">
-    Third
-   <p>组件foo2，也即Third的内容</p>
-  </div>
+  <div class="ba">{{ $route.name }}嵌套路由ba{{ $route.params.id }}</div>
 </template>
 <script type="text/ecmascript-6">
 export default{}

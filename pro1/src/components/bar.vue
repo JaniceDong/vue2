@@ -1,6 +1,5 @@
 <template>
  <div class="bar">
-   Second
    <p>{{ message }}</p>
  </div>
 

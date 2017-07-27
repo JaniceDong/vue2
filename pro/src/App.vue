@@ -5,16 +5,10 @@
       <li><router-link to="/foo">Go to 1</router-link></li>
       <li><router-link to="/bar">Go to 2</router-link></li>
       <li><router-link to="/foo2"> Go to 3</router-link></li>
-      <ol>
-        <li><router-link to="/foo2/fo">Go to 1/1 </router-link></li>
-        <li><router-link to="/foo2/ba">Go to 1/2</router-link></li>
-
-        <li><router-link :to="{name:'ThirdFirst',params:{id:123}}">Go to 1/1 </router-link></li>
-        <li><router-link :to="{name:'ThirdSecond',params:{id:321}}">Go to 1/2</router-link></li>
-      </ol>
-      <li><router-link to="/bar2">Go to 4</router-link></li>
     </ol>
-    <router-view></router-view>
+    <router-view class="route2"></router-view>
+    <router-view class="route1" name="left" style="width:50%;float:left;background-color:#6600ff"></router-view>
+    <router-view class="route3" name="right" style="width:50%;float: right; background-color: #ff6600;"></router-view>
   </div>
 </template>
 <script>
