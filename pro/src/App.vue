@@ -21,5 +21,7 @@ export default {
 </script>
 
 <style>
-
+  a.router-link-active{
+    color: #f66;
+  }
 </style>
