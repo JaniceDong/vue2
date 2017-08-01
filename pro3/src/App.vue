@@ -10,6 +10,10 @@
         <li><router-link to="/foo2/ba">Go to ba </router-link></li>
       </ol>
       <li><router-link to="/bar2">Go to 4</router-link></li>
+      <li><router-link to="/gogo">gogo</router-link></li>
+      <li><router-link to="/aaa/789">Go to {{ $route.params.id }}</router-link></li>
+      <li><router-link to="/bbb/135">Go Go {{ $route.params.id }}</router-link></li>
+      <li><router-link to="/ccc/001">Go Go {{ $route.params.id }}</router-link></li>
     </ol>
     <router-view></router-view>
   </div>
@@ -17,12 +21,7 @@
 <script>
 /*import child from './components/foo2.vue';*/
 export default {
-  name: 'app',
- data(){
-   return {
-     id:123
-   }
- }
+  name: 'app'
 }
 </script>
 

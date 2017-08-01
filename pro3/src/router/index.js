@@ -24,8 +24,16 @@ export default new Router({
       children:[
         {path:'/', component:Third},
         {path:'fo', component:ThirdFirst},
-        {path:'ba', redirect:'/'}
+        {path:'ba', redirect:'/foo'}
       ]},
-    {path:'/bar2', component:Fourth}
+    {path:'/bar2', component:Fourth,alias:'/gogo'},/*alias模板别名，可以是数组*/
+    {path:'/aaa/:id', component:First},
+    {path:'/bbb/:id', redirect:'/aaa/:id'},
+    {path:'/ccc/:id',redirect:xxx => {
+      const { hash,params,query} = xxx;
+      if(params.id == '001'){
+        return '/aaa/:id'
+      }
+    }}
   ]
 })
